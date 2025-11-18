@@ -9,7 +9,6 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { ProjectDetail } from './components/ProjectDetail';
 import { ManagementStrategy } from './components/ManagementStrategy';
-import { PasswordProtection } from './components/PasswordProtection';
 
 function HomePage() {
   return (
@@ -27,22 +26,16 @@ function HomePage() {
 }
 
 export default function App() {
-  // Set your password here or use environment variable
-  // For production, use: import.meta.env.VITE_SITE_PASSWORD || 'your-default-password'
-  const sitePassword = import.meta.env.VITE_SITE_PASSWORD || '2025';
-
   return (
-    <PasswordProtection password={sitePassword}>
-      <Router>
-        <div className="min-h-screen">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/project/:projectId" element={<ProjectDetail />} />
-            <Route path="/management-strategy" element={<ManagementStrategy />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
-        </div>
-      </Router>
-    </PasswordProtection>
+    <Router>
+      <div className="min-h-screen">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project/:projectId" element={<ProjectDetail />} />
+          <Route path="/management-strategy" element={<ManagementStrategy />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }

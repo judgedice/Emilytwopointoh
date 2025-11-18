@@ -39,6 +39,10 @@ import studioWorkshopImage from 'figma:asset/a1749c238e5471e07f1c6eeb8b8685596d6
 import newStudioPresentationImage from 'figma:asset/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
 import uxForAiDesignImage from 'figma:asset/bfa0512d651de6a939924d80d221e4ee3d9a8891.png';
 import uxpaLogoImage from 'figma:asset/12ea3552f145caae81c0ca17c8fa22292c21c848.png';
+import bangalorePresentationImage from 'figma:asset/b10f7f26ce67dfed1e11aa4ad56f3e33e4e0d8d4.png';
+import bangaloreGroupImage from 'figma:asset/4bae7c6e49d99d2b8bb73f892beac0d01e11aa7d.png';
+import bangaloreStatueSideImage from 'figma:asset/7bccb7a869b90a625e89d9d346da5faf20e0b87e.png';
+import bangalorePresentingImage from 'figma:asset/cfd9273eb644c2f52815bae09568b80b740183c4.png';
 
 interface Quote {
   text: string;
@@ -203,7 +207,7 @@ const projectsData: Record<string, ProjectData> = {
     id: 'nuveen-digital',
     title: 'Presentations and Speaking Events',
     category: 'UX/UI Design',
-    year: '2024',
+    year: '2025',
     role: 'Presenter and workshop facilitator',
     event: 'Maximo Utilities Working Group: Denver',
     description: 'I have spoken at conferences, facilitated hands-on workshops, and led collaborative sessions designed to help teams deepen their understanding of AI, design, and user-centered practices.',
@@ -471,10 +475,11 @@ export function ProjectDetail() {
                     />
                   </div>
                 </div>
-                <div 
-                  className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8"
-                  dangerouslySetInnerHTML={{ __html: project.solution }}
-                />
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8">
+                  <p>
+                    I presented at the annual Maximo Utilities Working Group in Denver, which offered a valuable opportunity to connect directly with some of our most active Maximo users. During the session, I shared an early preview of key features planned for our 9.2 release scheduled for summer 2026. I then facilitated an interactive workshop, breaking attendees into small groups to design their ideal dashboards and identify the KPIs that matter most to them. The conversations and hands-on activities provided rich insights into how users are engaging with the product today, where they encounter friction, and what improvements would make the biggest difference in their day-to-day work.
+                  </p>
+                </div>
                 <div className="mt-8">
                   <div className="w-full border border-gray-300" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
                     <iframe
@@ -504,41 +509,28 @@ export function ProjectDetail() {
                 </div>
 
                 {/* Repeated Section */}
-                <div className="mt-16 mb-8 flex gap-4">
-                  <div className="w-1/2 flex flex-col gap-4">
-                    <ImageWithFallback
-                      src={studioPresentationImage}
-                      alt="Presentation at Studio Ambassador Workshop"
-                      className="w-full h-auto"
-                    />
-                    <ImageWithFallback
-                      src={studioWorkshopImage}
-                      alt="Workshop Session"
-                      className="w-full h-auto"
-                    />
-                  </div>
-                  <div className="w-1/2">
-                    <ImageWithFallback
-                      src={bangaloreStatueImage}
-                      alt="Asset Manager Workshop"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="mt-16 mb-8 flex gap-4 items-start">
+                  <ImageWithFallback
+                    src={studioWorkshopImage}
+                    alt="Workshop Session"
+                    className="w-1/2 h-auto"
+                  />
+                  <ImageWithFallback
+                    src={bangalorePresentingImage}
+                    alt="Presenting at Bangalore Workshop"
+                    className="w-1/2 h-auto"
+                  />
                 </div>
-                <div 
-                  className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8"
-                  dangerouslySetInnerHTML={{ __html: project.solution }}
-                />
-                <div className="mt-8">
-                  <div className="w-full border border-gray-300" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
-                    <iframe
-                      src="https://drive.google.com/file/d/1hP3BCUm5rXCvrCNYGyl45ewWn5D6WjRS/preview"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                      allow="autoplay"
-                      title="Operations Dashboard Presentation"
-                    />
-                  </div>
-                  <p className="text-sm text-gray-600 mt-2 italic">Presenting on the power of influence at the Studio Ambassador workshop in Bangalore India</p>
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8">
+                  <p className="mb-6">
+                    In May 2025, I traveled to our design studio in Bangalore, India to help facilitate a three-day Studio Ambassador workshop. This was an opportunity not only to share my expertise as a Senior Design Manager, but also to learn directly from the designers in the room. Alongside my fellow facilitators, I guided sessions focused on elevating delivery skills, strengthening strategic design thinking, and deepening cross-studio collaboration. We spent time discussing real-world practices, exploring new methods, and creating space for designers at every level to share their experiences.
+                  </p>
+                  <p className="mb-6">
+                    The workshop blended presentations, hands-on activities, and reflective discussions, all centered on helping participants build confidence in their craft, improve their influence within the 3-in-the-box model, and strengthen the way they communicate design decisions across teams.
+                  </p>
+                  <p>
+                    It was an energizing exchange of knowledge that strengthened our global design community and broadened my own perspective as a design leader.
+                  </p>
                 </div>
 
                 {/* Metadata Grid - Second Section */}
@@ -549,7 +541,7 @@ export function ProjectDetail() {
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Year</p>
-                    <p className="text-sm">{project.year}</p>
+                    <p className="text-sm">2024</p>
                   </div>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Role</p>
