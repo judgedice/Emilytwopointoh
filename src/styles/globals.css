@@ -205,6 +205,18 @@ html {
   padding-left: 0.5rem;
 }
 
+.challenge-content ol {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.challenge-content ol li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 .challenge-content strong {
   font-weight: 600;
 }

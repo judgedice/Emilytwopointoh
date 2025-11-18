@@ -8,6 +8,7 @@ import { CareerMilestones } from './components/CareerMilestones';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { ProjectDetail } from './components/ProjectDetail';
+import { ManagementStrategy } from './components/ManagementStrategy';
 
 function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:projectId" element={<ProjectDetail />} />
+          <Route path="/management-strategy" element={<ManagementStrategy />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

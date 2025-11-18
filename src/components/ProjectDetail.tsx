@@ -23,6 +23,22 @@ import sustainabilityAwardImage from 'figma:asset/b4e5f3a0f85d789571822a6e8bda04
 import uxForAiImage from 'figma:asset/b56139bbdfdbc56770b56733587382974c68f576.png';
 import uxPrinciplesHeaderImage from 'figma:asset/aa7ea038784e3d4a7a89e7a55055b8c309f3213f.png';
 import uxpaLogo from 'figma:asset/a415df67883beccd5b2de5ea2d5158f214951446.png';
+import polarisHeroImage from 'figma:asset/246cc9b11b8ef81ecad140ce730078e8edad88b3.png';
+import competitiveBenchmarkingImage from 'figma:asset/4c4b76e6db917ec738002798781b047c13ad49ab.png';
+import userCenteredRedesignImage from 'figma:asset/0680cc58d0349608cbed460b3b7c2c0e84305c99.png';
+import wireframeImage1 from 'figma:asset/f8b5757bc03c3dd8cc03382719027013f9f9ad15.png';
+import wireframeImage2 from 'figma:asset/3e5e1ef3da2d1fe1c5140866f2cdc560cde1b3e1.png';
+import impactResultsImage from 'figma:asset/86c60e2013b8c1b0ee8630769058bc7b333e5806.png';
+import presentationImage from 'figma:asset/3b6fb1c6a135ede3452e71ed3e0af02443f554fe.png';
+import assetManagerImage from 'figma:asset/d583f25f1a25251c0c06dfa6f75733063a02e04d.png';
+import workshopImage from 'figma:asset/a10069022316526b91914b1ba65fccfe7528ef25.png';
+import bangaloreWorkshopImage from 'figma:asset/75d54c21f8c6ccb394a43ec4ef63d98e04c31f64.png';
+import bangaloreStatueImage from 'figma:asset/3c0767d316948ae176144bbb07f3ebe8624267f0.png';
+import studioPresentationImage from 'figma:asset/4cba9f7a2e22e55c64191063fab822bf8375740e.png';
+import studioWorkshopImage from 'figma:asset/a1749c238e5471e07f1c6eeb8b8685596d63f84f.png';
+import newStudioPresentationImage from 'figma:asset/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
+import uxForAiDesignImage from 'figma:asset/bfa0512d651de6a939924d80d221e4ee3d9a8891.png';
+import uxpaLogoImage from 'figma:asset/12ea3552f145caae81c0ca17c8fa22292c21c848.png';
 
 interface Quote {
   text: string;
@@ -35,7 +51,7 @@ interface ProjectData {
   category: string;
   year: string;
   role: string;
-  client: string;
+  event: string;
   description: string;
   challenge: string;
   solution: string;
@@ -51,7 +67,7 @@ const projectsData: Record<string, ProjectData> = {
     category: 'UX Design',
     year: '2024',
     role: 'Senior UX Design Manager',
-    client: 'IBM',
+    event: 'IBM',
     description: 'In order to offset carbon output, companies calculate an area\'s above ground biomass (all living plant matter above the soil) to determine how much carbon the biomass will naturally reclaim. (Carbon Sequestration)',
     challenge: 'The design team was tasked with defining how users, especially ESG and portfolio managers, could meaningfully engage with Above Ground Biomass (AGB) data to guide investment and monitoring decisions. This meant uncovering high-value use cases, clarifying user personas, and mapping intuitive end-to-end flows. They were also asked to leverage the Environmental Intelligence Suite 2.0\'s dashboarding capabilities to give users clear visibility into carbon content across their portfolios, compare multiple locations, and use historical trends to inform action.\n\nLooking ahead, the team began shaping a longer-term vision that includes predictive insights and more robust reporting needs based off AI foundation models.',
     solution: 'I encouraged my team to use the Product Develop Lifecycle(PDLC) model to begin the discovery process. I lead an alignment workshop with the cross functional team (UXD/UXR/PM/Dev) to identify product opportunities with commercial viability.',
@@ -83,7 +99,7 @@ const projectsData: Record<string, ProjectData> = {
     category: 'Product Design',
     year: '2020-2023',
     role: 'Senior UX Designer',
-    client: 'IBM',
+    event: 'IBM',
     description: '',
     challenge: '<p>Energy companies around the world were struggling with the growing unpredictability of climate-driven weather events. Public weather data was too coarse and inconsistent, updating too slowly to guide critical operations. Customers needed a forecasting solution that would:</p><ul><li>Deliver <strong>high-accuracy, high-frequency</strong> renewable energy forecasts,</li><li>Integrate seamlessly into their existing workflow and operational systems,</li><li>Improve maintenance scheduling and operational safety,</li><li>Scale across large and diverse wind and solar portfolios, and</li><li>Visualize performance metrics in customizable dashboards tailored to business needs.</li></ul><p>The core ask became clear: <strong>build a scalable, AI-driven forecasting platform that empowers asset managers to make fast, confident, safe, and cost-effective decisions.</strong></p>',
     solution: '<p>We began by deeply understanding the operational pressures of maintenance planners, asset managers, and grid operators. Through interviews, workflow observations, and co-design sessions, we identified key pain points: scattered systems, safety risks, reliance on low-quality public data, and the need for precise, real-time insights.</p><p style="margin-top: 2rem;">Working with research, I lead our team through a competitive analysis workshop where we identified target competitors to understand capability expectations as we started to construct our solution.</p>',
@@ -117,9 +133,9 @@ const projectsData: Record<string, ProjectData> = {
     title: 'UX for AI',
     category: 'AI/UX Research',
     year: '2023',
-    role: 'Senior UX Designer, Author & AI Guild Lead',
-    client: 'IBM',
-    description: 'Co-authored UX for AI Principles and integrated Watson AI capabilities across enterprise product suite',
+    role: 'Senior UX Manager, Author, AI Guild Lead',
+    event: 'IBM',
+    description: 'Co-authored the UX for AI Principles handbook and led the initiative to integrate AI capabilities across an enterprise product suite.',
     challenge: 'As AI capabilities expanded across IBM products, teams needed clear principles and patterns for designing trustworthy, transparent AI experiences that users could understand and control.',
     solution: '<p>I was a founding member of the IBM AI Guild in 2021, where I helped lead our transition into designing intuitive, human-centered AI experiences. As part of that work, I co-authored IBM\'s UX for AI principles. These were guidelines that ensure our AI solutions enhance human abilities rather than limit them.</p><p style="margin-top: 2rem;">By creating a clear and accessible foundation for AI-UX craft, I enabled designers and cross-functional teams to develop a shared understanding and stronger empathy in a space that was rapidly evolving. Leading my team into this new design frontier meant defining expectations, responsibilities, and collaborative frameworks that empowered us to make thoughtful, confident AI design decisions.</p>',
     impact: [
@@ -147,18 +163,23 @@ const projectsData: Record<string, ProjectData> = {
   },
   'broadridge-advisor': {
     id: 'broadridge-advisor',
-    title: 'Advisor Platform Redesign',
+    title: 'Project Polaris',
     category: 'UX/UI Design',
-    year: '2018-2020',
-    role: 'Senior UX Designer',
-    client: 'Broadridge Financial',
-    description: 'Redesigned financial advisor workflows to streamline client onboarding and portfolio management operations',
-    challenge: 'Financial advisors were struggling with fragmented tools and complex workflows that slowed down client onboarding and portfolio management, leading to inefficiency and client frustration.',
-    solution: 'Redesigned the advisor platform with unified workflows, intelligent automation, and streamlined interfaces. Focused on reducing cognitive load and enabling advisors to focus on client relationships rather than administrative tasks.',
+    year: '2025',
+    role: 'Senior Design Manager, UX Design, User Research',
+    event: 'IBM',
+    description: 'Reimagining the Digital Experience for IBM Environmental Intelligence',
+    challenge: 'IBM Environmental Intelligence (EI) was facing a significant awareness and engagement gap among its core technical audience—developers and data scientists seeking to integrate climate, weather, or emissions data into applications and workflows. Despite strong underlying capabilities, EI struggled with:<ul><li>Low page traffic and low sign up conversion rates</li><li>Prospective users not finding the right level of technical depth, examples, and use cases</li><li>Competitors providing clearer, more actionable journeys</li><li>.com template constraints limiting EI\'s ability to highlight technical value</li><li>A lack of early, hands-on value demonstration in the discovery journey</li></ul><br/><strong>The mandate:</strong><br/>Reimagine a new digital experience for IBM EI that:<ul><li>Increases monthly page traffic 10x</li><li>Achieves a 4% conversion rate from visits to sign-ups</li><li>Positions EI as the go-to for Developers and data scientists looking to embed environmental intelligence or emissions calculation directly into their applications</li><li>Designs a scalable user journey template, starting with GHG emissions APIs, that can extend to future APIs</li></ul>',
+    solution: '<span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%); color: white; border-radius: 50%; font-weight: 600; font-size: 18px; margin-right: 12px; flex-shrink: 0; vertical-align: middle;">1</span><strong>Competitive Benchmarking</strong><br/><br/>The first thing the team needed to do was a Competitive Benchmarking exercise to understand what the table stakes were in this market and what the competition was excelling at and where there were gaps in the experiences leaving the door open for new solutions like ours. I led the team in a workshop with PM Dov and Sales.<br/><br/>We analyzed top-performing competitors across addressable markets, examining:<ul style="margin-left: 2rem;"><li>SEO and search capture strategies</li><li>Developer-forward content patterns</li><li>Web UX models for data/API products</li><li>The clarity and accessibility of hands-on examples</li><li>How they surface industry use cases, pricing, and documentation</li></ul><br/>Competitors like Climatiq and tomorrow.io demonstrated best-in-class approaches: fast access to data search, clear API feature breakdowns, and strong use-case framing.<br/><br/><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%); color: white; border-radius: 50%; font-weight: 600; font-size: 18px; margin-right: 12px; flex-shrink: 0; vertical-align: middle;">2</span><strong>Current-State Experience Audit</strong><br/><br/>We then assessed EI\'s end-to-end site experience across pages including:<ul style="margin-left: 2rem;"><li>GHG Landing</li><li>Industries</li><li>Emission Factor Datasets</li><li>Pricing</li><li>Calculator Demo</li></ul><br/>Recurring issues emerged:<ul style="margin-left: 2rem;"><li>Messaging was too high-level, not API- or workflow-oriented</li><li>The value of Scope 1/2/3 data and industry applications was not surfaced early enough</li><li>Ad banners and promotional content felt under-contextualized</li><li>Multiple entry points to data created friction</li><li>Pricing lacked clarity and comparative structure</li><li>Examples and demos were valuable but needed deeper configurability and context</li></ul>',
     impact: [
-      'Reduced client onboarding time from 45 minutes to 15 minutes',
-      'Increased advisor productivity by 50%',
-      'Improved client satisfaction scores by 40%',
+      '<strong>1. A Clear, Evidence-Based Design Direction</strong>',
+      'A validated strategy rooted in competitive benchmarking and user needs, ensuring IBM could confidently move toward an experience that:',
+      '<ul style="margin-left: 2rem;"><li>Allows users to understand EI\'s value earlier</li><li>Highlights the unique strengths of EI\'s emissions APIs</li><li>Dramatically reduces friction in the evaluation and trial journey</li></ul>',
+      '<strong>2. A Replicable User-Journey Template</strong>',
+      'The new GHG API journey design serves as a model for all future EI APIs, allowing IBM to scale consistently across products.',
+      '<strong>3. High-Impact Experience Improvements Identified</strong>',
+      'Including:',
+      '<ul style="margin-left: 2rem;"><li>Coherent API messaging</li><li>Stronger industry and use-case storytelling</li><li>Cleaner data catalog navigation</li><li>Standardized dataset terminology</li><li>More intuitive pricing comparisons</li><li>A hands-on, interactive emissions calculator demo that increases engagement</li></ul>',
     ],
     responsibilities: [
       'Led UX redesign of advisor workflows and client management tools',
@@ -169,25 +190,25 @@ const projectsData: Record<string, ProjectData> = {
     ],
     quotes: [
       {
-        text: 'The workflow redesign cut our onboarding time by two-thirds. Advisors love the new system',
-        author: 'VP of Technology, Broadridge',
+        text: 'Emily is a trusted team member and design leader who is team focused and who drives consensus within cross functional teams.',
+        author: 'Sandra Gannon, Director of Design, IBM',
       },
       {
-        text: "Emily's user research uncovered pain points we didn't even know existed",
-        author: 'Product Manager, Broadridge',
+        text: 'Emily has played a pivotal role in this strategic growth initiative.',
+        author: 'Cooper Sanborn, Principal Design Manager, IBM',
       },
     ],
   },
   'nuveen-digital': {
     id: 'nuveen-digital',
-    title: 'Digital Experience Platform',
+    title: 'Presentations and Speaking Events',
     category: 'UX/UI Design',
-    year: '2015-2018',
-    role: 'Interactive Designer',
-    client: 'Nuveen Investments',
-    description: 'Created interactive digital experiences and marketing materials for investment products and services',
-    challenge: 'Nuveen needed to transform complex investment data and product information into engaging digital experiences that resonated with both financial advisors and institutional investors.',
-    solution: 'Designed interactive presentations, data visualizations, and digital marketing materials that made investment information accessible and compelling. Created cohesive design systems that worked across web, mobile, and presentation formats.',
+    year: '2024',
+    role: 'Presenter and workshop facilitator',
+    event: 'Maximo Utilities Working Group: Denver',
+    description: 'I have spoken at conferences, facilitated hands-on workshops, and led collaborative sessions designed to help teams deepen their understanding of AI, design, and user-centered practices.',
+    challenge: '',
+    solution: 'I went on a speaking tour to share the work I led in the AI Guild on defining user-experience principles for AI. At UXPA, I co-presented a global webinar introducing the UX for AI Principles handbook, giving designers around the world a clear, practical foundation for creating intuitive, human-centered AI experiences.',
     impact: [
       'Launched 20+ interactive product presentations',
       'Increased digital engagement by 65%',
@@ -208,39 +229,6 @@ const projectsData: Record<string, ProjectData> = {
       {
         text: 'Her interactive presentations helped us win major institutional clients',
         author: 'Head of Product, Nuveen',
-      },
-    ],
-  },
-  'nuveen-campaign': {
-    id: 'nuveen-campaign',
-    title: 'Focus on Income Campaign',
-    category: 'Brand Design',
-    year: '2016-2017',
-    role: 'Interactive Designer',
-    client: 'Nuveen Investments',
-    description: 'Led comprehensive campaign design with interactive presentations and investor education materials',
-    challenge: 'Nuveen needed to launch a major campaign to educate investors about income-focused investment strategies during a low-interest-rate environment.',
-    solution: 'Designed a comprehensive campaign including interactive presentations, educational materials, and digital experiences. Created compelling narratives around income investing that resonated with diverse investor audiences.',
-    impact: [
-      'Reached 50,000+ financial advisors nationwide',
-      'Generated $1B+ in new income product investments',
-      'Won internal innovation award for campaign design',
-    ],
-    responsibilities: [
-      'Led campaign design and creative direction',
-      'Created interactive investor education materials',
-      'Designed presentation decks and marketing collateral',
-      'Coordinated with marketing and product teams',
-      'Ensured brand consistency across all campaign materials',
-    ],
-    quotes: [
-      {
-        text: 'The campaign design was instrumental in our most successful product launch ever',
-        author: 'CMO, Nuveen',
-      },
-      {
-        text: "Emily's creative vision brought our income investment strategy to life",
-        author: 'Product Strategy Lead, Nuveen',
       },
     ],
   },
@@ -341,45 +329,13 @@ export function ProjectDetail() {
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl mb-8">{project.title}</h1>
           
-          {/* Navigation */}
-          <nav className="flex gap-6 mb-12 border-b-[0.5px] border-gray-200 pb-4">
-            <a 
-              href="#challenge" 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('challenge')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-              className="text-sm hover:text-gray-600 hover:scale-105 transition-all cursor-pointer active:text-gray-800"
-            >
-              The Challenge
-            </a>
-            <a 
-              href="#process" 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('process')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-              className="text-sm hover:text-gray-600 hover:scale-105 transition-all cursor-pointer active:text-gray-800"
-            >
-              The Process
-            </a>
-            <a 
-              href="#impact" 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('impact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-              className="text-sm hover:text-gray-600 hover:scale-105 transition-all cursor-pointer active:text-gray-800"
-            >
-              Impact & Results
-            </a>
-          </nav>
+
           
           {/* Project Meta Info */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-8">
             <div>
-              <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Client</p>
-              <p className="text-sm">{project.client}</p>
+              <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Event</p>
+              <p className="text-sm">{project.event}</p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Year</p>
@@ -414,7 +370,7 @@ export function ProjectDetail() {
                   />
                   {/* Play Button Overlay */}
                   {!isVideoModalOpen && (
-                    <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="absolute inset-0 flex items-center justify-center" onClick={() => setIsVideoModalOpen(true)}>
                       <div className="w-16 h-16 bg-white/60 rounded-full flex items-center justify-center group-hover:bg-white/80 transition-all">
                         <Play className="w-7 h-7 text-gray-700 ml-0.5" fill="currentColor" />
                       </div>
@@ -429,8 +385,19 @@ export function ProjectDetail() {
                         setIsVideoModalOpen(false);
                       }}
                     >
+                      {/* Close Button */}
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setIsVideoModalOpen(false);
+                        }}
+                        className="absolute top-2 left-2 z-50 bg-white/90 hover:bg-white p-2 shadow-md transition-all hover:shadow-lg"
+                        aria-label="Close video"
+                      >
+                        <X size={20} className="text-gray-700" />
+                      </button>
                       <iframe 
-                        className="w-full h-full" 
+                        className="w-full h-full border border-gray-300" 
                         src="https://drive.google.com/file/d/10FtFP3hQtD4Ro-ALVDe87-7kEdt2Bkqq/preview"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
@@ -457,9 +424,22 @@ export function ProjectDetail() {
               </div>
             )}
             
-            <p className="leading-relaxed text-gray-800 text-[15px]">
-              {project.description}
-            </p>
+            {/* Polaris Hero Image - only for broadridge-advisor project */}
+            {project.id === 'broadridge-advisor' && (
+              <div className="mb-8">
+                <div className="w-full border border-gray-300" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                  <iframe
+                    src="https://drive.google.com/file/d/1xtJr0Onf5rJfISiGXxjSPETUxLEJM7JR/preview"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                    allow="autoplay"
+                    title="Greenhouse Gas Emissions Calculation"
+                  />
+                </div>
+                <p className="text-sm text-gray-600 mt-2 italic"><strong>Reimagining the Digital Experience for IBM Environmental Intelligence:</strong> Demo I created to help educate top executives on the growth strategy for this project.</p>
+              </div>
+            )}
+            
+
           </div>
         </div>
       </div>
@@ -468,11 +448,170 @@ export function ProjectDetail() {
       <div id="challenge" className="bg-gray-50 py-4 md:py-6">
         <div className="max-w-5xl mx-auto px-6">
           <div className="max-w-3xl">
-            <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">The Challenge</h3>
-            <div 
-              className="text-lg md:text-xl leading-relaxed text-gray-700 challenge-content"
-              dangerouslySetInnerHTML={{ __html: project.challenge }}
-            />
+            {project.id === 'nuveen-digital' ? (
+              <>
+                <div className="mb-8 flex gap-4">
+                  <div className="w-1/2 flex flex-col gap-4">
+                    <ImageWithFallback
+                      src={presentationImage}
+                      alt="Presentation at Maximo Utilities Working Group"
+                      className="w-full h-auto"
+                    />
+                    <ImageWithFallback
+                      src={workshopImage}
+                      alt="Workshop Session"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="w-1/2">
+                    <ImageWithFallback
+                      src={assetManagerImage}
+                      alt="Asset Manager Workshop"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div 
+                  className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8"
+                  dangerouslySetInnerHTML={{ __html: project.solution }}
+                />
+                <div className="mt-8">
+                  <div className="w-full border border-gray-300" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                    <iframe
+                      src="https://drive.google.com/file/d/1yFMKYgBS1Wp-cUVFS2ep7KyjjRWkEZxx/preview"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      allow="autoplay"
+                      title="Operations Dashboard Presentation"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-600 mt-2 italic">Presenting our Operations Dashboard solution at the Maximo Utilities Working Group.</p>
+                </div>
+
+                {/* Metadata Grid */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-8 mt-12 pt-12 border-t border-gray-200">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Event</p>
+                    <p className="text-sm">Studio Ambassador Workshop: Bangalore India</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Year</p>
+                    <p className="text-sm">{project.year}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Role</p>
+                    <p className="text-sm">Presenter, Workshop Facilitator, Mentor</p>
+                  </div>
+                </div>
+
+                {/* Repeated Section */}
+                <div className="mt-16 mb-8 flex gap-4">
+                  <div className="w-1/2 flex flex-col gap-4">
+                    <ImageWithFallback
+                      src={studioPresentationImage}
+                      alt="Presentation at Studio Ambassador Workshop"
+                      className="w-full h-auto"
+                    />
+                    <ImageWithFallback
+                      src={studioWorkshopImage}
+                      alt="Workshop Session"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="w-1/2">
+                    <ImageWithFallback
+                      src={bangaloreStatueImage}
+                      alt="Asset Manager Workshop"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div 
+                  className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8"
+                  dangerouslySetInnerHTML={{ __html: project.solution }}
+                />
+                <div className="mt-8">
+                  <div className="w-full border border-gray-300" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                    <iframe
+                      src="https://drive.google.com/file/d/1hP3BCUm5rXCvrCNYGyl45ewWn5D6WjRS/preview"
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      allow="autoplay"
+                      title="Operations Dashboard Presentation"
+                    />
+                  </div>
+                  <p className="text-sm text-gray-600 mt-2 italic">Presenting on the power of influence at the Studio Ambassador workshop in Bangalore India</p>
+                </div>
+
+                {/* Metadata Grid - Second Section */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-8 mt-12 pt-12 border-t border-gray-200">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Event</p>
+                    <p className="text-sm">User Experience Professionals Association (UXPA) International</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Year</p>
+                    <p className="text-sm">{project.year}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-500 mb-2">Role</p>
+                    <p className="text-sm">Webinar Presenter</p>
+                  </div>
+                </div>
+
+                {/* Repeated Section - Second */}
+                
+                {/* UXPA Logo and Link */}
+                <div className="mt-16 mb-8 flex items-center gap-6">
+                  <a 
+                    href="https://uxpa.org/aiovg_videos/designing-the-ux-for-ai-not-your-typical-ux-design/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <img
+                      src={uxpaLogoImage}
+                      alt="UXPA International"
+                      className="h-16 cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </a>
+                  <a 
+                    href="https://uxpa.org/aiovg_videos/designing-the-ux-for-ai-not-your-typical-ux-design/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-gray-900 underline"
+                  >
+                    Click to view the webinar
+                  </a>
+                </div>
+                
+                <div className="mb-8">
+                  <a 
+                    href="https://drive.google.com/file/d/1xqO7CjTHaQNULxVlVSnY2-L25PQdsqdy/view" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <ImageWithFallback
+                      src={uxForAiDesignImage}
+                      alt="UX for AI design presentation"
+                      className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
+                    />
+                  </a>
+                </div>
+
+                <div 
+                  className="text-lg md:text-xl leading-relaxed text-gray-700 mb-8"
+                  dangerouslySetInnerHTML={{ __html: project.solution }}
+                />
+              </>
+            ) : (
+              <>
+                <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">The Challenge</h3>
+                <div 
+                  className="text-lg md:text-xl leading-relaxed text-gray-700 challenge-content"
+                  dangerouslySetInnerHTML={{ __html: project.challenge }}
+                />
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -481,7 +620,9 @@ export function ProjectDetail() {
       <div id="process" className="pt-16 md:pt-24 pb-5 md:pb-8">
         <div className="max-w-5xl mx-auto px-6">
           <div className="max-w-3xl">
-            <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">The Process</h3>
+            {project.id !== 'nuveen-digital' && (
+              <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">The Process</h3>
+            )}
             
             {/* Special rendering for Maximo Asset project with image between paragraphs */}
             {project.id === 'maximo-asset' ? (
@@ -566,12 +707,153 @@ export function ProjectDetail() {
                   </div>
                 </div>
               </>
-            ) : (
+            ) : project.id === 'broadridge-advisor' ? (
+              <>
+                {/* Section 1: Competitive Benchmarking */}
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12">
+                  <p className="mb-6">
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', background: 'linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%)', color: 'white', borderRadius: '50%', fontWeight: 600, fontSize: '18px', marginRight: '12px', flexShrink: 0, verticalAlign: 'middle' }}>1</span>
+                    <strong>Competitive Benchmarking</strong>
+                  </p>
+                  
+                  <p className="mb-6">
+                    The first thing the team needed to do was a Competitive Benchmarking exercise to understand what the table stakes were in this market and what the competition was excelling at and where there were gaps in the experiences leaving the door open for new solutions like ours. I led the team in an interactive workshop with PM, Dev and Sales.
+                  </p>
+                  
+                  {/* Competitive Benchmarking Image */}
+                  <div className="mb-6">
+                    <ImageWithFallback
+                      src={competitiveBenchmarkingImage}
+                      alt="Competitive Benchmarking Analysis"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  
+                  <p className="mb-6">
+                    We analyzed top-performing competitors across addressable markets, examining:
+                  </p>
+                  <ul className="ml-8 mb-6 list-disc">
+                    <li>SEO and search capture strategies</li>
+                    <li>Developer-forward content patterns</li>
+                    <li>Web UX models for data/API products</li>
+                    <li>The clarity and accessibility of hands-on examples</li>
+                    <li>How they surface industry use cases, pricing, and documentation</li>
+                  </ul>
+                  <p className="mb-6">
+                    Competitors like Climatiq and tomorrow.io demonstrated best-in-class approaches: fast access to data search, clear API feature breakdowns, and strong use-case framing.
+                  </p>
+                </div>
+                
+                {/* Section 2: Current-State Experience Audit */}
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12">
+                  <p className="mb-6">
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', background: 'linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%)', color: 'white', borderRadius: '50%', fontWeight: 600, fontSize: '18px', marginRight: '12px', flexShrink: 0, verticalAlign: 'middle' }}>2</span>
+                    <strong>Current-State Experience Audit</strong>
+                  </p>
+                  
+                  <p className="mb-6">
+                    We then assessed EI's end-to-end site experience across pages including:
+                  </p>
+                  <ul className="ml-8 mb-6 list-disc">
+                    <li>GHG Landing</li>
+                    <li>Industries</li>
+                    <li>Emission Factor Datasets</li>
+                    <li>Pricing</li>
+                    <li>Calculator Demo</li>
+                  </ul>
+                  <p className="mb-6">
+                    Recurring issues emerged:
+                  </p>
+                  <ul className="ml-8 mb-6 list-disc">
+                    <li>Messaging was too high-level, not API- or workflow-oriented</li>
+                    <li>The value of Scope 1/2/3 data and industry applications was not surfaced early enough</li>
+                    <li>Ad banners and promotional content felt under-contextualized</li>
+                    <li>Multiple entry points to data created friction</li>
+                    <li>Pricing lacked clarity and comparative structure</li>
+                    <li>Examples and demos were valuable but needed deeper configurability and context</li>
+                  </ul>
+                </div>
+                
+                {/* Section 3: User Centered Redesign Strategy */}
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12">
+                  <p className="mb-6">
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', background: 'linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%)', color: 'white', borderRadius: '50%', fontWeight: 600, fontSize: '18px', marginRight: '12px', flexShrink: 0, verticalAlign: 'middle' }}>3</span>
+                    <strong>User Centered Redesign Strategy</strong>
+                  </p>
+                  
+                  {/* User Centered Redesign Image */}
+                  <div className="mb-6">
+                    <ImageWithFallback
+                      src={userCenteredRedesignImage}
+                      alt="User Centered Redesign Strategy - GHG Emissions Calculation"
+                      className="w-full h-auto"
+                    />
+                    <p className="text-sm text-gray-500 mt-2 italic">
+                      We collaborated in Mural in hands-on working sessions
+                    </p>
+                  </div>
+                  
+                  <p className="mb-6">
+                    To address these gaps, we defined design principles aligned with user needs:
+                  </p>
+                  
+                  <ul className="ml-8 mb-6 list-disc">
+                    <li><strong>Show value immediately</strong> with hands-on examples and API-in-action components</li>
+                    <li><strong>Streamline navigation</strong> so users can reach data, docs, and pricing in fewer clicks</li>
+                    <li><strong>Reframe the story</strong> around building with APIs rather than generic sustainability</li>
+                    <li><strong>Strengthen industry relevance</strong> with clearer use case mapping</li>
+                    <li><strong>Make pricing transparent and comparable</strong> with clear editions, feature descriptions, and a usage estimator</li>
+                    <li><strong>Introduce standardization</strong> of dataset and data source language aligned with industry norms</li>
+                    <li><strong>Create a replicable template</strong> for future EI APIs</li>
+                  </ul>
+                </div>
+                
+                {/* Section 4: Wireframing Future-State Concepts */}
+                <div className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12">
+                  <p className="mb-6">
+                    <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '32px', height: '32px', background: 'linear-gradient(135deg, #6B8CAE 0%, #4A5F7F 100%)', color: 'white', borderRadius: '50%', fontWeight: 600, fontSize: '18px', marginRight: '12px', flexShrink: 0, verticalAlign: 'middle' }}>4</span>
+                    <strong>Wireframing Future-State Concepts</strong>
+                  </p>
+                  
+                  <p className="mb-6">
+                    We produced screens for:
+                  </p>
+                  
+                  <ul className="ml-8 mb-6 list-disc">
+                    <li>A reimagined GHG API landing experience</li>
+                    <li>Industry-specific pages showcasing concrete applications</li>
+                    <li>A more intuitive Emission Factor Dataset navigation model</li>
+                    <li>A simplified pricing and editions comparison</li>
+                    <li>An interactive emissions calculation example that can scale across industries</li>
+                  </ul>
+                  
+                  <p className="mb-6">
+                    Each screen incorporated high-level findings, suggested changes, and design notes from the workshop.
+                  </p>
+                  
+                  <div className="mb-8">
+                    <img 
+                      src={wireframeImage1} 
+                      alt="Greenhouse Gas emissions calculation interface" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  
+                  <div className="mb-8">
+                    <img 
+                      src={wireframeImage2} 
+                      alt="Emission Factors Data Sets interface" 
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </>
+            ) : project.id !== 'nuveen-digital' ? (
               <div 
-                className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12"
+                className="text-lg md:text-xl leading-relaxed text-gray-700 mb-12 challenge-content"
                 dangerouslySetInnerHTML={{ __html: project.solution }}
               />
-            )}
+            ) : null}
           </div>
         </div>
         
@@ -825,17 +1107,28 @@ export function ProjectDetail() {
       </div>
 
       {/* Key Responsibilities & Impact Grid */}
-      <div id="results" className="bg-gray-50 pt-5 md:pt-8 pb-16 md:pb-24">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
-            {/* Impact & Results */}
-            <div id="impact" className="flex-1">
-              <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">Impact & Results</h3>
-              <ul className="space-y-3">
-                {project.impact.map((item, index) => (
-                  <li key={index} className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: item }} />
-                ))}
-              </ul>
+      {project.id !== 'nuveen-digital' && (
+        <div id="results" className="bg-gray-50 pt-5 md:pt-8 pb-16 md:pb-24">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
+              {/* Impact & Results */}
+              <div id="impact" className="flex-1">
+                <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">Impact & Results</h3>
+                {project.id === 'ibm-environmental' ? (
+                <div>
+                  <img 
+                    src={impactResultsImage} 
+                    alt="Impact and Results summary showing evidence-based design direction, replicable template, and high-impact experience improvements" 
+                    className="w-full h-auto mb-6"
+                  />
+                </div>
+              ) : (
+                <ul className="space-y-3">
+                  {project.impact.map((item, index) => (
+                    <li key={index} className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: item }} />
+                  ))}
+                </ul>
+              )}
             </div>
             
             {/* Sustainability Award Image */}
@@ -844,7 +1137,7 @@ export function ProjectDetail() {
                 <img 
                   src={sustainabilityAwardImage} 
                   alt="IBM Sustainability Award 2023 for Renewables Forecasting" 
-                  className="w-full"
+                  className="w-full border border-gray-300"
                 />
                 <p className="text-sm text-gray-500 mt-4 italic">
                   Our renewables forecasting solution won the Sustainability Product of the Year Award in 2023
@@ -853,7 +1146,8 @@ export function ProjectDetail() {
             )}
           </div>
         </div>
-      </div>
+        </div>
+      )}
 
       {/* Testimonials Section */}
       {project.quotes.length > 0 && (

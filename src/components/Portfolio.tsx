@@ -5,6 +5,9 @@ import nuveenImage2 from 'figma:asset/9a106f56b3b522ac084edbe8ad1d901c6455c7cf.p
 import broadridgeImage from 'figma:asset/adfb6539afc13603b0400de7dbdf936939693236.png';
 import biomassImage from 'figma:asset/e5c3022d007695e998a7c05ed5e1feebfdd29b65.png';
 import renewablesImage from 'figma:asset/e95031712dde9ec987813e86a3c3b90ebb5a9c42.png';
+import uxForAiPortfolioImage from 'figma:asset/7fc4b41e28d8d14c90775ba2d8a2164559c6acc7.png';
+import polarisImage from 'figma:asset/db868b9d1b8f671c1828399a4a76b5d5b9edfbde.png';
+import presentationsImage from 'figma:asset/3a3f3efab907ab2838aa71d27afda921f62cc1d5.png';
 
 interface PortfolioItem {
   id: number;
@@ -37,35 +40,27 @@ export function Portfolio() {
     },
     {
       id: 3,
-      slug: 'watson-ai',
-      title: 'UX for AI',
-      category: 'AI/UX Research • IBM',
-      description: 'Co-authored UX for AI Principles and integrated Watson AI capabilities across enterprise product suite',
-      image: 'https://images.unsplash.com/photo-1762330918491-f4288a62adb8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaSUyMHdhdHNvbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYyODExNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      slug: 'broadridge-advisor',
+      title: 'Project Polaris',
+      category: 'UX Design • User Research • Product led growth',
+      description: 'Reimagining the end to end digital experience for the Environmental Intelligence Product',
+      image: polarisImage,
     },
     {
       id: 4,
-      slug: 'broadridge-advisor',
-      title: 'Broadridge Advisor Platform',
-      category: 'UX/UI Design • Broadridge',
-      description: 'Redesigned financial advisor workflows to streamline client onboarding and portfolio management operations',
-      image: broadridgeImage,
+      slug: 'watson-ai',
+      title: 'UX for AI',
+      category: 'AI/UX Research • IBM',
+      description: 'Co-authored the UX for AI Principles handbook and led the initiative to integrate AI capabilities across an enterprise product suite.',
+      image: uxForAiPortfolioImage,
     },
     {
       id: 5,
       slug: 'nuveen-digital',
-      title: 'Nuveen Digital Experience',
-      category: 'UX/UI Design • Nuveen',
-      description: 'Created interactive digital experiences and marketing materials for investment products and services',
-      image: nuveenImage2,
-    },
-    {
-      id: 6,
-      slug: 'nuveen-campaign',
-      title: 'Nuveen Focus on Income Campaign',
-      category: 'Brand Design • Nuveen',
-      description: 'Led comprehensive campaign design with interactive presentations and investor education materials',
-      image: nuveenImage1,
+      title: 'Presentations and Speaking Events',
+      category: 'Public speaking • education • workshop facilitation',
+      description: 'I have spoken at conferences, facilitated hands-on workshops, and led collaborative sessions designed to help teams deepen their understanding of AI, design, and user-centered practices.',
+      image: presentationsImage,
     },
   ];
 

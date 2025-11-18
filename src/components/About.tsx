@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function About() {
   const skills = [
     'UX Design',
@@ -28,9 +30,17 @@ export function About() {
             <p className="text-lg text-gray-600 mb-6">
               With deep expertise in UX, AI design, and design systems, I turn complex challenges into clear, scalable solutions that make a real impact for both users and the business. I've led cross-functional teams, partnered closely with product and engineering, and shaped end-to-end design strategies that scale across global organizations.
             </p>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 mb-6">
               I'm now looking for a senior design leadership role where I can help shape product vision, elevate design maturity, and strengthen organizational impact while continuing to grow as a design leader.
             </p>
+            <Link
+              to="/management-strategy"
+              onClick={() => window.scrollTo(0, 0)}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-100 text-black hover:bg-blue-200 transition-all duration-500 mt-2"
+            >
+              <span className="text-lg">My Management Strategy</span>
+              <span className="text-xl">→</span>
+            </Link>
           </div>
 
           <div>
