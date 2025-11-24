@@ -3,46 +3,46 @@ import { useEffect, useState } from 'react';
 import { ArrowLeft, Expand, ArrowUp, Play, X } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
-import environmentalImage from '../assets/709fc27ca422e0a6b8c515b0ad804126461522b2.png';
-import italyImage from '../assets/26b3a6a6ae3e11685a2dc48b44256cd3ddb36923.png';
-import processImage1 from '../assets/e50baf020a11489c0ebbd97375a586c07a4cc532.png';
-import processImage2 from '../assets/9f415a7518a7c5f051e43df3a9f9c8799037d18b.png';
-import personaImage from '../assets/c584ff55c005d97696bf632ce82167f26a3ffce1.png';
-import lidarImage from '../assets/44339b869ed5b6f2bdd0917b91be29cfeba03d58.png';
-import histogramImage from '../assets/9d49d5cde9a6aafb7b09537b4debaf2c4a29fd50.png';
-import carbonDataImage from '../assets/56c07f18be52b5ad8b4e8bb449f64210134964be.png';
-import explainabilityImage from '../assets/2dd1630e5e45f2fbc299dadb3159141e7b22312f.png';
-import renewablesHeroImage from '../assets/e95031712dde9ec987813e86a3c3b90ebb5a9c42.png';
-import competitorAnalysisImage from '../assets/39769696a3845653d2234dd036a8f85e43df539b.png';
-import competitorAnalysisModalImage from '../assets/48504d8056e247792d1c7a5e12f2b8670e2b535e.png';
-import weatherDashboardImage from '../assets/35df6ed5982dcc065156e9b811b53e6a702ef5ce.png';
-import energyDashboardImage from '../assets/39f75985c1d3f300cbb95702d059b81fd999d796.png';
-import operationsDashboardImage from '../assets/00a50972352ccb5e7815dc832c897ee49eba0f39.png';
-import workQueuesImage from '../assets/100854b0c6c5657d965be3af91a37294e6241edd.png';
-import sustainabilityAwardImage from '../assets/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
-import uxForAiImage from '../assets/b56139bbdfdbc56770b56733587382974c68f576.png';
-import uxPrinciplesHeaderImage from '../assets/aa7ea038784e3d4a7a89e7a55055b8c309f3213f.png';
-import uxpaLogo from '../assets/a415df67883beccd5b2de5ea2d5158f214951446.png';
-import polarisHeroImage from '../assets/246cc9b11b8ef81ecad140ce730078e8edad88b3.png';
-import competitiveBenchmarkingImage from '../assets/4c4b76e6db917ec738002798781b047c13ad49ab.png';
-import userCenteredRedesignImage from '../assets/0680cc58d0349608cbed460b3b7c2c0e84305c99.png';
-import wireframeImage1 from '../assets/f8b5757bc03c3dd8cc03382719027013f9f9ad15.png';
-import wireframeImage2 from '../assets/3e5e1ef3da2d1fe1c5140866f2cdc560cde1b3e1.png';
-import impactResultsImage from '../assets/86c60e2013b8c1b0ee8630769058bc7b333e5806.png';
-import presentationImage from '../assets/3b6fb1c6a135ede3452e71ed3e0af02443f554fe.png';
-import assetManagerImage from '../assets/d583f25f1a25251c0c06dfa6f75733063a02e04d.png';
-import workshopImage from '../assets/a10069022316526b91914b1ba65fccfe7528ef25.png';
-import bangaloreWorkshopImage from '../assets/75d54c21f8c6ccb394a43ec4ef63d98e04c31f64.png';
-import bangaloreStatueImage from '../assets/3c0767d316948ae176144bbb07f3ebe8624267f0.png';
-import studioPresentationImage from '../assets/4cba9f7a2e22e55c64191063fab822bf8375740e.png';
-import studioWorkshopImage from '../assets/a1749c238e5471e07f1c6eeb8b8685596d63f84f.png';
-import newStudioPresentationImage from '../assets/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
-import uxForAiDesignImage from '../assets/bfa0512d651de6a939924d80d221e4ee3d9a8891.png';
-import uxpaLogoImage from '../assets/12ea3552f145caae81c0ca17c8fa22292c21c848.png';
-import bangalorePresentationImage from '../assets/b10f7f26ce67dfed1e11aa4ad56f3e33e4e0d8d4.png';
-import bangaloreGroupImage from '../assets/4bae7c6e49d99d2b8bb73f892beac0d01e11aa7d.png';
-import bangaloreStatueSideImage from '../assets/7bccb7a869b90a625e89d9d346da5faf20e0b87e.png';
-import bangalorePresentingImage from '../assets/cfd9273eb644c2f52815bae09568b80b740183c4.png';
+import environmentalImage from 'figma:asset/709fc27ca422e0a6b8c515b0ad804126461522b2.png';
+import italyImage from 'figma:asset/26b3a6a6ae3e11685a2dc48b44256cd3ddb36923.png';
+import processImage1 from 'figma:asset/e50baf020a11489c0ebbd97375a586c07a4cc532.png';
+import processImage2 from 'figma:asset/9f415a7518a7c5f051e43df3a9f9c8799037d18b.png';
+import personaImage from 'figma:asset/c584ff55c005d97696bf632ce82167f26a3ffce1.png';
+import lidarImage from 'figma:asset/44339b869ed5b6f2bdd0917b91be29cfeba03d58.png';
+import histogramImage from 'figma:asset/9d49d5cde9a6aafb7b09537b4debaf2c4a29fd50.png';
+import carbonDataImage from 'figma:asset/56c07f18be52b5ad8b4e8bb449f64210134964be.png';
+import explainabilityImage from 'figma:asset/2dd1630e5e45f2fbc299dadb3159141e7b22312f.png';
+import renewablesHeroImage from 'figma:asset/e95031712dde9ec987813e86a3c3b90ebb5a9c42.png';
+import competitorAnalysisImage from 'figma:asset/39769696a3845653d2234dd036a8f85e43df539b.png';
+import competitorAnalysisModalImage from 'figma:asset/48504d8056e247792d1c7a5e12f2b8670e2b535e.png';
+import weatherDashboardImage from 'figma:asset/35df6ed5982dcc065156e9b811b53e6a702ef5ce.png';
+import energyDashboardImage from 'figma:asset/39f75985c1d3f300cbb95702d059b81fd999d796.png';
+import operationsDashboardImage from 'figma:asset/00a50972352ccb5e7815dc832c897ee49eba0f39.png';
+import workQueuesImage from 'figma:asset/100854b0c6c5657d965be3af91a37294e6241edd.png';
+import sustainabilityAwardImage from 'figma:asset/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
+import uxForAiImage from 'figma:asset/b56139bbdfdbc56770b56733587382974c68f576.png';
+import uxPrinciplesHeaderImage from 'figma:asset/aa7ea038784e3d4a7a89e7a55055b8c309f3213f.png';
+import uxpaLogo from 'figma:asset/a415df67883beccd5b2de5ea2d5158f214951446.png';
+import polarisHeroImage from 'figma:asset/246cc9b11b8ef81ecad140ce730078e8edad88b3.png';
+import competitiveBenchmarkingImage from 'figma:asset/4c4b76e6db917ec738002798781b047c13ad49ab.png';
+import userCenteredRedesignImage from 'figma:asset/0680cc58d0349608cbed460b3b7c2c0e84305c99.png';
+import wireframeImage1 from 'figma:asset/f8b5757bc03c3dd8cc03382719027013f9f9ad15.png';
+import wireframeImage2 from 'figma:asset/3e5e1ef3da2d1fe1c5140866f2cdc560cde1b3e1.png';
+import impactResultsImage from 'figma:asset/86c60e2013b8c1b0ee8630769058bc7b333e5806.png';
+import presentationImage from 'figma:asset/3b6fb1c6a135ede3452e71ed3e0af02443f554fe.png';
+import assetManagerImage from 'figma:asset/d583f25f1a25251c0c06dfa6f75733063a02e04d.png';
+import workshopImage from 'figma:asset/a10069022316526b91914b1ba65fccfe7528ef25.png';
+import bangaloreWorkshopImage from 'figma:asset/75d54c21f8c6ccb394a43ec4ef63d98e04c31f64.png';
+import bangaloreStatueImage from 'figma:asset/3c0767d316948ae176144bbb07f3ebe8624267f0.png';
+import studioPresentationImage from 'figma:asset/4cba9f7a2e22e55c64191063fab822bf8375740e.png';
+import studioWorkshopImage from 'figma:asset/a1749c238e5471e07f1c6eeb8b8685596d63f84f.png';
+import newStudioPresentationImage from 'figma:asset/b4e5f3a0f85d789571822a6e8bda042c358d6662.png';
+import uxForAiDesignImage from 'figma:asset/bfa0512d651de6a939924d80d221e4ee3d9a8891.png';
+import uxpaLogoImage from 'figma:asset/12ea3552f145caae81c0ca17c8fa22292c21c848.png';
+import bangalorePresentationImage from 'figma:asset/b10f7f26ce67dfed1e11aa4ad56f3e33e4e0d8d4.png';
+import bangaloreGroupImage from 'figma:asset/4bae7c6e49d99d2b8bb73f892beac0d01e11aa7d.png';
+import bangaloreStatueSideImage from 'figma:asset/7bccb7a869b90a625e89d9d346da5faf20e0b87e.png';
+import bangalorePresentingImage from 'figma:asset/cfd9273eb644c2f52815bae09568b80b740183c4.png';
 
 interface Quote {
   text: string;
@@ -76,8 +76,8 @@ const projectsData: Record<string, ProjectData> = {
     challenge: 'The design team was tasked with defining how users, especially ESG and portfolio managers, could meaningfully engage with Above Ground Biomass (AGB) data to guide investment and monitoring decisions. This meant uncovering high-value use cases, clarifying user personas, and mapping intuitive end-to-end flows. They were also asked to leverage the Environmental Intelligence Suite 2.0\'s dashboarding capabilities to give users clear visibility into carbon content across their portfolios, compare multiple locations, and use historical trends to inform action.\n\nLooking ahead, the team began shaping a longer-term vision that includes predictive insights and more robust reporting needs based off AI foundation models.',
     solution: 'I encouraged my team to use the Product Develop Lifecycle(PDLC) model to begin the discovery process. I lead an alignment workshop with the cross functional team (UXD/UXR/PM/Dev) to identify product opportunities with commercial viability.',
     impact: [
-      'Stricter environmental regulations in Europe—especially the EU Deforestation Regulation—created strong market pull, and after launch the AGB solution quickly won adoption from two leading MRV providers and companies preparing for EUDR, driving early revenue and accelerating data usage.',
-      'As customers validate the accuracy and value of the data, we\'re planning enhanced features that open doors to adjacent markets and unlock meaningful upsell opportunities across the broader Sustainability Software portfolio.',
+      'More stringent environmental regulations in Europe make this more attractive to the European market. (EU Deforestation Regulation) After launch, the AGB solution gained adoption from 2 Monitoring, Reporting, and Verification providers and companies preparing for EUDR, driving growing data usage and early revenue.',
+      'As customers validate the accuracy and value of the data continues to evolve, future enhanced features are being planned to expand into adjacent markets, and create upsell opportunities across the Sustainability Software portfolio.',
     ],
     responsibilities: [
       'Led end-to-end UX design for core platform features',
@@ -448,9 +448,14 @@ export function ProjectDetail() {
         </div>
       </div>
 
+      {/* Main Content with Sidebar Layout */}
+      <div className="flex gap-8 max-w-7xl mx-auto px-6">
+        {/* Main Content Column */}
+        <div className="flex-1 min-w-0">
+          
       {/* Challenge Section */}
-      <div id="challenge" className="bg-gray-50 py-4 md:py-6">
-        <div className="max-w-5xl mx-auto px-6">
+      <div id="challenge" className="bg-gray-50 py-4 md:py-6 -mx-6 px-6">
+        <div className="max-w-full">
           <div className="max-w-3xl">
             {project.id === 'nuveen-digital' ? (
               <>
@@ -610,7 +615,7 @@ export function ProjectDetail() {
 
       {/* Solution Section */}
       <div id="process" className="pt-16 md:pt-24 pb-5 md:pb-8">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-full">
           <div className="max-w-3xl">
             {project.id !== 'nuveen-digital' && (
               <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">The Process</h3>
@@ -1100,28 +1105,18 @@ export function ProjectDetail() {
 
       {/* Key Responsibilities & Impact Grid */}
       {project.id !== 'nuveen-digital' && (
-        <div id="results" className="bg-gray-50 pt-5 md:pt-8 pb-16 md:pb-24">
-          <div className="max-w-5xl mx-auto px-6">
+        <div id="results" className="bg-gray-50 pt-5 md:pt-8 pb-16 md:pb-24 -mx-6 px-6">
+          <div className="max-w-full">
             <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-start">
               {/* Impact & Results */}
               <div id="impact" className="flex-1">
                 <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6 text-[32px]">Impact & Results</h3>
-                {project.id === 'ibm-environmental' ? (
-                <div>
-                  <img 
-                    src={impactResultsImage} 
-                    alt="Impact and Results summary showing evidence-based design direction, replicable template, and high-impact experience improvements" 
-                    className="w-full h-auto mb-6"
-                  />
-                </div>
-              ) : (
                 <ul className="space-y-3">
                   {project.impact.map((item, index) => (
                     <li key={index} className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: item }} />
                   ))}
                 </ul>
-              )}
-            </div>
+              </div>
             
             {/* Sustainability Award Image */}
             {project.id === 'maximo-asset' && (
@@ -1141,28 +1136,33 @@ export function ProjectDetail() {
         </div>
       )}
 
-      {/* Testimonials Section */}
-      {project.quotes.length > 0 && (
-        <div className="py-16 md:py-24">
-          <div className="max-w-5xl mx-auto px-6">
-            <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-12">Testimonials</h3>
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
-              {project.quotes.map((quote, index) => (
-                <div key={index} className="border-l-2 border-gray-300 pl-6">
-                  <p className="text-lg leading-relaxed text-gray-700 mb-4">
-                    "{quote.text}"
-                  </p>
-                  {quote.author && (
-                    <p className="text-sm text-gray-500">
-                      — {quote.author}
+        </div>
+        {/* End Main Content Column */}
+
+        {/* Testimonials Sidebar */}
+        {project.quotes.length > 0 && (
+          <div className="hidden lg:block w-80 flex-shrink-0">
+            <div className="sticky top-24">
+              <h3 className="text-xs uppercase tracking-wider text-gray-500 mb-6">Testimonials</h3>
+              <div className="space-y-8">
+                {project.quotes.map((quote, index) => (
+                  <div key={index} className="border-l-2 border-gray-300 pl-4">
+                    <p className="text-sm leading-relaxed text-gray-700 mb-3">
+                      "{quote.text}"
                     </p>
-                  )}
-                </div>
-              ))}
+                    {quote.author && (
+                      <p className="text-xs text-gray-500">
+                        — {quote.author}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
+      {/* End Sidebar Layout */}
 
       {/* Footer Navigation */}
       <div className="border-t border-gray-200 py-12">

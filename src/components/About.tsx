@@ -31,7 +31,7 @@ export function About() {
               With deep expertise in UX, AI design, and design systems, I turn complex challenges into clear, scalable solutions that make a real impact for both users and the business. I've led cross-functional teams, partnered closely with product and engineering, and shaped end-to-end design strategies that scale across global organizations.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              I'm now looking for a senior design leadership role where I can help shape product vision, elevate design maturity, and strengthen organizational impact while continuing to grow as a design leader.
+              I'm looking for a senior design leadership role where I can help shape product vision, elevate design maturity, and strengthen organizational impact while continuing to grow as a design leader.
             </p>
             <Link
               to="/management-strategy"
