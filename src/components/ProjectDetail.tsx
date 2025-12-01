@@ -156,12 +156,12 @@ const projectsData: Record<string, ProjectData> = {
     ],
     quotes: [
       {
-        text: "Emily's AI design principles have become foundational to how we build trustworthy AI experiences",
-        author: 'Design Director, IBM',
+        text: 'Emily was instrumental in defining the core principles that became the foundation of our AI design language. Thanks to her work, we achieved 100% adoption of the design language across AI projects, accelerated delivery timelines, and created a consistent, user-centered experience that is now a benchmark for all of IBM.',
+        author: 'Stefanie Lauria - IBM Design Principal for AI Products, IBM',
       },
       {
-        text: 'Her leadership of the AI guild transformed our approach to designing with emerging technologies',
-        author: 'VP of Design, IBM',
+        text: 'Emily consistently raised the bar for user experience quality across a highly complex portfolio of enterprise products in asset management and environmental sustainability.',
+        author: 'Craig Moser - User Experience Design Executive, IBM',
       },
     ],
   },
@@ -227,12 +227,12 @@ const projectsData: Record<string, ProjectData> = {
     ],
     quotes: [
       {
-        text: 'Emily transformed complex investment data into beautiful, engaging digital experiences',
-        author: 'Marketing Director, Nuveen',
+        text: 'Emily ran cross-functional workshops with mastery, aligning diverse stakeholders with competing priorities and removing roadblocks so her team could execute quickly.',
+        author: 'Craig Moser - User Experience Design Executive, IBM',
       },
       {
-        text: 'Her interactive presentations helped us win major institutional clients',
-        author: 'Head of Product, Nuveen',
+        text: 'Was a great session by Mats, Emily and Mumtaz and just grateful for this opportunity. Thanks for the insights.',
+        author: 'Participant at the Studio Ambassador Workshop, Bangalore India',
       },
     ],
   },
@@ -259,7 +259,7 @@ export function ProjectDetail() {
           // Try to trigger autoplay via postMessage
           videoRef.contentWindow?.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
         } catch (e) {
-          console.log('Autoplay not supported');
+          // Autoplay not supported - silent fail
         }
       }, 500);
       return () => clearTimeout(timer);
