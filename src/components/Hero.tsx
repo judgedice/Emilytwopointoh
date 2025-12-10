@@ -22,7 +22,7 @@ export function Hero() {
           Emily DiCesaro
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto mb-12">
-          Senior Design Manager building high-performing, global teams united by trust, collaboration, and shared purpose
+          Design Leader
         </p>
         <button
           onClick={scrollToWork}
