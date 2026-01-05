@@ -22,7 +22,7 @@ export function Hero() {
           Emily DiCesaro
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto mb-12">
-          Design Leader
+          Design Leader • Strategic Thinker • Lifelong Learner
         </p>
         <button
           onClick={scrollToWork}
